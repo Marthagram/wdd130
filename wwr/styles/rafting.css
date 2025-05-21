@@ -1,0 +1,99 @@
+:root{
+    --primary-color:#6AB4DC;
+    --secondary-color:#2ABF99;
+    --accent1-color:#928b68;
+    --accent2-color:#FFCED0;
+    --heading-font: "Pacifico", cursive;
+    --body-font: "Amaranth", sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    font-weight: 400;
+    color: var(--accent1-color);
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--primary-color);
+
+}
+
+nav, p, section, article{
+    margin: 15px;
+    padding: 8px;
+}
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+
+}
+
+.hero .heroimage{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.hero h1{
+    position: absolute;
+    top: 5px;
+    width:100%;
+    padding: 16px;
+    text-align: center;
+    opacity:0.7;
+    background-color: var(--accent1-color);
+    color: #6AB4DC;
+}
+.hero article{
+    position:absolute;
+    top: 300px;
+}
+.hero p{
+    background-color:var(--primary-color);
+    color:black;
+    padding: 15px;
+    padding-left:25px;
+    
+    
+}
+
+.articleimage {
+    float: right;
+    width:150px;
+    margin-top: 18px;
+    margin-right: 20px;
+    box-shadow: 0 0 30px gray;
+    
+    
+}
+
+.adventure h2{
+    padding-bottom: 20px;
+}
+
+.adventure img {
+    display: block;
+    margin-bottom: 30px;
+
+}
