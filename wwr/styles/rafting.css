@@ -1,8 +1,8 @@
 :root{
     --primary-color:#6AB4DC;
-    --secondary-color:#2ABF99;
+    --secondary-color:#c9f5ea;
     --accent1-color:#928b68;
-    --accent2-color:#FFCED0;
+    --accent2-color:#fff2f2;
     --heading-font: "Pacifico", cursive;
     --body-font: "Amaranth", sans-serif;
 }
@@ -15,7 +15,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 2fr ;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+
 }
  nav{
     display: flex;
@@ -34,6 +34,7 @@ body{
     font-family: var(--body-font);
     font-weight: 400;
     color: var(--accent1-color);
+    
 }
 
 
@@ -54,29 +55,35 @@ nav, p, section, article{
 }
 
 .hero{
-    position: relative;
+    width: 840px;
+    height: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
 
+    
 }
 
 .heroimage{
-    display:block;
+    grid-area: 1/1/4/4;
     width:100%;
     height:auto;
 }
 .hero h1{
-    position: absolute;
-    top: 5px;
+    grid-column: 1/4;
+    grid-row: 1/2;
     width:100%;
     padding: 16px;
     text-align: center;
     opacity:0.8;
-    background-color: var(--accent1-color);
-    color: #6AB4DC;
+    color: #b7e5fd;
 }
 .hero article{
-    position:absolute;
-    top: 300px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    opacity:0.9;
 }
+
 .hero p{
     background-color:var(--primary-color);
     color:black;
@@ -98,37 +105,51 @@ nav, p, section, article{
 
 .history{
     margin-top: 80px;
+    width: 840px;
+    height: auto;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 2fr 1fr 2fr;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
 }
 
-.first para{
+.firstpara{
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    
 } 
 .historyhead{
     grid-column: 2/3 ;
     grid-row: 1/2;
-    z-index: 1;
+    margin-bottom: 3px;
+    justify-self: center;
+}
+
+.history img{
+    grid-column: 2/3;
+    grid-row: 2/3;
     
 }
-.history img{
-    grid-column: 2/3 ;
-    grid-row: 1/2;
-}
-.second para{
+.secondpara{
     grid-column: 3/4 ;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
+
+
 
 
 .adventure{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    background-color: var(--accent2-color);
+    width: 840px;
+    margin: 0 auto;
+    margin-top: 10px;
     gap: 10px ;
-    
-    
+   
 }
+
 
 .raftone{
     grid-column: 1/2;
@@ -150,10 +171,9 @@ nav, p, section, article{
 .adventure h2{
     margin-top: 10px;
     padding-bottom: 20px;
-    grid-column: 3/4;
+    grid-column: 1/6 ;
+    text-align: center;
 }
-
-
 
 .adventure img {
     margin-bottom: 30px;
