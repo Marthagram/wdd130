@@ -195,7 +195,6 @@ nav, p, section, article{
 footer{
 display: grid;
 border-top:1px solid black ;
-width: 100%;
 background-color: var(--accent1-color);
 margin: 2rem auto;
 grid-template-columns: 1fr 1fr 1fr;
@@ -205,17 +204,19 @@ grid-template-rows: 100px;
 
 
 footer p{
-grid-column: 1/2;
-grid-row: 1/3;
+grid-column: 2/3;
 text-wrap: nowrap;
 align-self: center;
 
 }
-footer a{
-    grid-column: 2/3;
+.wireframe{
+    grid-column: 1/2;
     align-self: center;
     justify-self: center;
-    
+    color: #1a1617;
+}
+.wireframe:hover{
+    color: crimson;
 }
 
 .socialmedia{
@@ -226,7 +227,7 @@ footer a{
     justify-content: center;
 } 
 
-.socialmedia a , footer a{
+.socialmedia a {
     text-decoration: none;    
 }
 iframe{
@@ -281,11 +282,12 @@ figcaption{
     grid-template-columns: 200px 1fr;
 }
 input[type="email"]{
-    width: 234px;
+    width: 258px;
 }
 .two{
     display: grid;
     grid-template-columns: 200px 1fr;
+    
 }
 fieldset{
  padding: 10px;
