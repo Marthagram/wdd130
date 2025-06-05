@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.2em;
+    color: rgb(26, 65, 52);
+    background-color: rgb(116, 119, 119);
+}
+header{
+    background-color: rgb(80, 45, 45);
+    width: 650px;
+    margin: 0 auto;
+}
+header h1{
+    color: blue;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5em;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
+form{
+    display: grid;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(67, 67, 184);
+    border-radius: 10px;
+    background-color: rgb(166, 188, 189);
+}
+form fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1 rem;
+    border: 1px solid black;
+}
+fieldset legend{
+    padding:0.5rem;
+    font-size:1.3em;
+    color: black;
+    font-family:"Cormorant Upright", serif;
+    font-weight: 700;
+}
+label, input, button, select, textarea{
+    font-family: "Amaranth", sans-serif;;
+}
+form label{
+    text-align: right;
+    padding-right:  1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+button{
+    display: inline-block;
+    width: 15rem;
+    margin:1rem auto;
+    border: none;
+    border-radius: 10rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: rgb(80, 45, 45);
+    color: blue;
+}
+footer{
+    margin: 2rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.9em;
+    color:rgb(34, 33, 33); 
+    border-top: 0.1rem solid black;
+    padding-top: 0.5rem;
+}
+.form-item{
+    display: grid;
+    align-items: center;
+    
+    
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin-top: 0.5rem;
+    margin-right: 150px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem ;
+}
+.row3 label{
+    
+    margin-top: 0.5rem;
+    margin-right: 20rem;
+}
+.row3 textarea{
+    margin: 0.5rem;
+}
