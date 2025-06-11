@@ -28,6 +28,11 @@ header{
  }
  nav a{
     color: var(--primary-color);
+
+ }
+ nav a:hover{
+    color: crimson;
+
  }
  nav img{
     margin-left: 5em;
@@ -172,7 +177,7 @@ input, textarea{
     justify-content: end;
     box-shadow:  0 0 40px gray ;
     background-color: var(--accent2-color);
-    color: crimson;
+    
     
 }
 
@@ -240,10 +245,10 @@ input, textarea{
 
 .articleimage {
     float: right;
-    width:130px;
-    height: 65px;
-    margin-top: 25px;
-    margin-right: 160px;
+    width:6em;
+    height: 3em;
+    margin-top: 3em;
+    margin-right: 15em;
     box-shadow: 0 0 30px gray;
     
     
@@ -409,7 +414,7 @@ nav, p, section, article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr ;
-    margin-top: 15em;
+    margin-right: 5em;
     height: 500px;
     
     
@@ -422,10 +427,10 @@ table,th, tr,td{
 }
 table{
     table-layout: fixed;
-    width: 45%;
-    height: 65%;
-    margin-left: 12em;
-    grid-column: 1/3;
+    width: 600px;
+    height: 400px;
+    z-index: 1;
+    grid-column: 2/3;
     grid-row: 1/2;
     margin-bottom: 5em;
     box-shadow: 0 0 40px grey;
@@ -447,9 +452,9 @@ thead > tr:last-of-type > th{
     width: 60%;
     height: 40%;
     text-align: center;
-    margin-left: 7em;
+    margin-left:15em;
     margin-top: 15em ;
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
@@ -626,7 +631,7 @@ justify-self: center;
     place-self: center;
     color: #1a1617;
 }
-.wireframe:hover, span, .want-more h4{
+.wireframe:hover, span{
     color: crimson;
 }
 
