@@ -73,40 +73,49 @@ input, textarea{
     color: rgb(206, 229, 158);
 }
 .site-purpose{
-    margin-top: 4em;
+    margin-top: .1em;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
 }
 #site-1-image{
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 2em;
+    margin-top: 14em;
     justify-self: end;
     border: 1px solid black;
     border-bottom-left-radius: 30px;
     box-shadow:  0 0 40px gray ;
-    background: radial-gradient(#eee, #9aa558);
+    background: radial-gradient(#eee, #fae3e3);
 
 }
-.site-purpose h3, #site-paragraph{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    text-align: center;
+
+.site-purpose h3{
+    text-decoration: underline;
 }
 #site-2-image{
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 1/2;
+    margin-top: 14em;
     border: 1px solid black;
     border-bottom-right-radius: 30px;
     box-shadow:  0 0 40px gray ;
     background: radial-gradient(#eee, rgb(172, 172, 233));
 }
+.site-head-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2em;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
 .grid-call-and-news{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 800px ;
-    margin: 11em 15em 0 15em 
+    grid-template-rows: 800px;
+    margin: 5em 15em 0 15em 
     
 
     
@@ -114,7 +123,7 @@ input, textarea{
 .newsletter{
     border: 1px solid black;
     padding: 2em;
-    margin-top: 4.5em;
+    margin-top: 1.5em;
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 30px;
@@ -421,10 +430,12 @@ nav, p, section, article{
     grid-template-rows: 1fr ;
     margin-right: 5em;
     height: 500px;
-    
-    
+}
+caption{
+    margin-bottom: .9em;
     
 }
+
 table,th, tr,td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -639,7 +650,7 @@ footer p{
     place-self: center;
     color: #1a1617;
 }
-.wireframe:hover, span{
+.wireframe:hover{
     color: crimson;
 }
 
