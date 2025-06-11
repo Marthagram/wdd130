@@ -43,25 +43,153 @@ header{
 body{
     font-family: var(--body-font);
     font-weight: 400;
+}
+input, textarea{
+    border-color: var(--accent3-color);
+}
+/* CSS rules for home page */
+.home-body{
+    background-color: var(--secondary-color);
+}
+.hero-class{
+    width: 1200px;
+    height: auto;
+    position: relative;
+}
+.hero-class img{
+    width: 100%;
+    height: auto;
+    
+}
+.hero-class h1{
+    position: absolute;
+    margin-top: .8em;
+    left: 12em;
+    color: rgb(206, 229, 158);
+}
+.site-purpose{
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+#site-1-image{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: end;
+    border: 1px solid black;
+    border-bottom-left-radius: 30px;
+    box-shadow:  0 0 40px gray ;
+
+}
+.site-purpose h3, p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+#site-2-image{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border: 1px solid black;
+    border-bottom-right-radius: 30px;
+    box-shadow:  0 0 40px gray ;
+}
+.grid-call-and-news{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 800px ;
+    margin: 3em 15em 0 15em 
+    
+
+    
+}
+.newsletter{
+    border: 1px solid black;
+    padding: 2em;
+    margin-top: 4.5em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 30px;
+    max-width: 400px;
+    max-height: 250px;
+    box-shadow:  0 0 40px gray ;
     
     
 }
+.newsletter button{
+    display: block;
+    margin-top: 20px;
+    margin-left: 15em;
+    border: 1px solid seashell;
+    border-radius: 30px;
+    padding: 15px 20px;
+    background-color: #6AB4DC;
+    box-shadow:  0 0 40px gray ;
 
-
-
-h1, h2{
-    font-family: var(--heading-font);
-    font-weight: 400;
-    color: var(--primary-color);
+}
+.newsletter button:hover{
+    background-color:crimson;
+    color: #d9f0eb;
+}
+.news-name{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    margin-bottom: .8em;
+    margin-top: .8em;
+}
+.news-email{
+    display: grid;
+    grid-template-columns: 100px 200px;
+}
+.news-name [type="text"]{
+    height: 2em;
     
+}
+
+.news-email [type="email"]{
+    width: 200px;
+    height: 2em;
 
 }
 
-nav, p, section, article{
-    margin: 15px;
-    padding: 8px;
+
+.call-to-action{
+    font-size: 20px;
+    border: 1px solid black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 25em;
+    height: 15em;
+    border-radius: 30px;
+    margin-left: 350px;
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-shadow:  0 0 40px gray ;
+    background-color: var(--accent2-color);
 }
 
+
+.call-to-action button{
+    
+    border: 1px solid white;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 22em;
+    padding: 15px 30px;
+    background-color: #6AB4DC;
+    border-radius: 30px;
+    box-shadow:  0 0 40px gray ;
+
+}
+.call-to-action button:hover{
+    background-color: crimson;
+    color: #d9f0eb;
+}
+
+
+/* CSS rules for About Us page */
 .hero{
     width: 1200px;
     height: auto;
@@ -110,7 +238,6 @@ nav, p, section, article{
     height: 65px;
     margin-top: 25px;
     margin-right: 160px;
-    
     box-shadow: 0 0 30px gray;
     
     
@@ -190,91 +317,92 @@ nav, p, section, article{
     padding-bottom: 20px;
     width:100%;
     height: auto; 
-}
-
-footer{
-display: grid;
-border-top:1px solid black ;
-background-color: var(--accent1-color);
-margin: 2rem auto;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 100px;
-
+    margin: 0 auto;
 }
 
 
-footer p{
-grid-column: 1/2;
-grid-row: 1/2;
-text-wrap: nowrap;
-align-self: center;
-justify-self: center;
 
-}
-.wireframe{
-    grid-column: 2/3;
-    grid-template-rows: 1/2;
-    place-self: center;
-    color: #1a1617;
-}
-.wireframe:hover{
-    color: crimson;
-}
 
-.socialmedia{
-    grid-column: 3/4;
-    grid-template-rows: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1, h2{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--primary-color);
     
+
 }
 
-.socialmedia a {
-    text-decoration: none;    
-} 
-
+nav, p, section, article{
+    margin: 15px;
+    padding: 8px;
+}
+/* CSS rules for Contact Us Page */
 iframe{
     border:0;
-    margin-bottom: 0;
+    margin-bottom: 5em;
     
 }
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
     background-color: var(--accent2-color);
+    color: rgb(66, 50, 211);
    
 }
 .reach-us{
     margin-top: 50px;
-    margin-left: 5em;
-    
-    
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.reach-us p, span{
+
+.reach-us  p, span{
     margin-left: 0;
 }
-.contactinfo h2{
+.reach-us h1{
+    font-size: 40px;
+}
+.contact-info h2{
     margin-top: 30px;
 }
-span, .contact-grid{
-    color: rgb(66, 50, 211);
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.contact-info{
+    border:1px solid #0e0d0b;
+    background-color: var(--secondary-color);
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 5em;
+    margin: 5em 5em 5em 5em;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow:  0 0 40px gray ;
+    
 }
 
 .contact-grid aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 0 0 0 5em;
+    
 }
 .contact-grid aside img{
     margin-top: 20px;
     border-radius: 100px;
-    width: 200px;
+    width: 150px;
     height: auto;
+    box-shadow:  0 0 40px gray ;
 }
 
-figcaption{
+figcaption, figure img{
     margin-left: 2.5em;
 }
 .input, fieldset{
@@ -283,7 +411,7 @@ figcaption{
 
 .one{
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 200px 258px;
 }
 input[type="email"]{
     width: 258px;
@@ -319,15 +447,178 @@ fieldset{
 .button{
     display: block;
     margin-top: 20px;
-    margin-left: 23em;
+    margin-left: 30em;
     border: 1px solid seashell;
     border-radius: 30px;
     padding: 15px 20px;
     background-color: #6AB4DC;
+    border-bottom-right-radius: 30px;
 
 }
 .button:hover{
-    background-color: #5e574a;
-    color: #d9f0eb;
+    background-color: crimson;
+    color: whitesmoke ;
     
 }
+/* CSS rules for trips page */
+.general-main{
+    background-color: var(--secondary-color) ;
+
+    
+
+}
+.trip-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
+}
+.trip-class-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 6px solid var(--accent2-color);
+    margin-left: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 5em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+.trip-class-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 6px solid var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+}
+.trip-class-3{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border: 6px solid var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 0;
+    margin-right: 3em;
+    margin-bottom: 5em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+.trip-class-1 img,
+.trip-class-2 img,
+.trip-class-3 img{
+    border-bottom-left-radius: 30px;
+    
+}
+.table-call-action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    margin-bottom: 0;
+    
+    
+}
+table,th, tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    table-layout: fixed;
+    width: 45%;
+    margin-left: 12em;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-bottom: 5em;
+    
+}
+tbody > tr > th{
+    background-color: var(--accent2-color);
+    
+} 
+thead > tr > th{
+    background-color: var(--accent3-color);
+}
+thead > tr:last-of-type > th{
+    border-bottom: 3px solid black;
+}
+.want-more{
+    border: 1px solid black;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    margin-left: 7em;
+    margin-top: 20em ;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+}
+.contact-button{
+    margin-top: 4em;
+    margin-left: 5em;
+    padding: 4px;
+    border: 1px solid seashell;
+    border-radius: 30px;
+    padding: 15px 20px;
+    background-color: #6AB4DC;
+}
+
+.contact-button:hover{
+    background-color:crimson;
+    color: white;
+}
+
+footer{
+display: grid;
+border-top:1px solid black ;
+background-color: var(--accent1-color);
+margin:0 auto;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 100px;
+}
+
+
+footer p{
+grid-column: 1/2;
+grid-row: 1/2;
+text-wrap: nowrap;
+align-self: center;
+justify-self: center;
+
+}
+.wireframe{
+    grid-column: 2/3;
+    grid-template-rows: 1/2;
+    place-self: center;
+    color: #1a1617;
+}
+.wireframe:hover, span{
+    color: crimson;
+}
+
+.socialmedia{
+    grid-column: 3/4;
+    grid-template-rows: 1/2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.socialmedia a, .call-to-action a {
+    text-decoration: none;    
+    margin: 0, 1em;
+} 
+
+
+
