@@ -219,9 +219,7 @@ input, textarea{
     height: auto;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 10px;
-
-    
+    text-align: center;    
 }
 
 .heroimage{
